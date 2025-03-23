@@ -13,7 +13,7 @@ This code is based on the following: https://github.com/psiphi75/esp-mpu9250.git
 
 ## Pin assignment
 
-- master for ESP8266:
+- master for ESP32S3:
   - GPIO5 is assigned as the data signal of i2c master port
   - GPIO4 is assigned as the clock signal of i2c master port
 
