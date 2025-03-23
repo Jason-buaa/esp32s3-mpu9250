@@ -6,16 +6,16 @@ a Nine-Axis (Gyro + Accelerometer + Compass) Motion Processing Unit. It also con
 
 The MPU9250 uses the i2c bus.
 
-The project has been configured for the ESP8266, but should also work on the ESP32 with a little
+The project has been configured for the ESP32S3, but should also work on the ESP32 with a little
 configuration.
 
-This code is based on the following: https://github.com/miniben-90/mpu9250
+This code is based on the following: https://github.com/psiphi75/esp-mpu9250.git
 
 ## Pin assignment
 
 - master for ESP8266:
-  - GPIO14 is assigned as the data signal of i2c master port
-  - GPIO2 is assigned as the clock signal of i2c master port
+  - GPIO5 is assigned as the data signal of i2c master port
+  - GPIO4 is assigned as the clock signal of i2c master port
 
 ## Configure the project
 
