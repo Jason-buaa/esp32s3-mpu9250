@@ -69,6 +69,16 @@ static void init_imu(void)
  * More sophisticated calibration tools can be applied.
  *
  * NOTE: The Gyro must not be moved during this process.
+ * 
+ * 校准步骤概述：
+
+  *保持设备静止：​在校准过程中，确保设备完全静止，没有任何旋转或运动。​
+
+  *数据采集：​在设备静止的状态下，连续读取陀螺仪的输出数据，记录一段时间内的读数。​
+
+  *计算零偏：​对采集到的数据进行平均，得到每个轴的平均输出值，这些值即为陀螺仪的零偏。​
+
+  *应用校准：​将计算得到的零偏值存储起来，在后续的陀螺仪数据处理中，从每次测量的角速度中减去对应的零偏值，以获得校正后的角速度。​
  *
  */
 
